@@ -18,6 +18,8 @@ out
 .DS_Store
 *.log
 *.tsbuildinfo
+PortableGit.exe
+PortableGit/
 
 # artifacts
 supabase.exe
