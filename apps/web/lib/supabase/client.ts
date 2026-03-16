@@ -1,29 +1,15 @@
-import { createBrowserClient, createServerClient } from '@supabase/auth-helpers-nextjs';
-import { cookies, headers } from 'next/headers';
+import { createClient } from '@supabase/supabase-js';
 import { type Database } from '@/types/database';
 
-export const createBrowserSupabaseClient = () => {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  if (!supabaseUrl || !supabaseKey) {
-    throw new Error('Supabase environment variables are missing');
-  }
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error('Supabase environment variables are missing');
+}
 
-  return createBrowserClient<Database>(supabaseUrl, supabaseKey);
-};
+// Client for browser usage
+export const createBrowserSupabaseClient = () => createClient<Database>(supabaseUrl, supabaseKey);
 
-// Helper for server components/route handlers
-export const createServerSupabaseClient = () => {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-  if (!supabaseUrl || !supabaseKey) {
-    throw new Error('Supabase environment variables are missing');
-  }
-
-  return createServerClient<Database>(supabaseUrl, supabaseKey, {
-    cookies,
-    headers
-  });
-};
+// Simplified server-side client (no cookies/session handling in this starter)
+export const createServerSupabaseClient = () => createClient<Database>(supabaseUrl, supabaseKey);

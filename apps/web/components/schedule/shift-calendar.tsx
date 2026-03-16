@@ -7,10 +7,6 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid';
 import { useMemo } from 'react';
 import { Card } from '@/components/ui/card';
-import '@fullcalendar/common/main.css';
-import '@fullcalendar/daygrid/main.css';
-import '@fullcalendar/timegrid/main.css';
-import '@fullcalendar/resource-timegrid/main.css';
 
 const FullCalendar = dynamic(() => import('@fullcalendar/react'), { ssr: false });
 

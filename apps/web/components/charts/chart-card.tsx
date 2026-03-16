@@ -1,3 +1,6 @@
+'use client';
+/* eslint-disable react/jsx-key */
+
 import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import {
@@ -58,5 +61,3 @@ export const ChartCard = ({ title, description, data, variant = 'area', classNam
     </div>
   </Card>
 );
-/* eslint-disable react/jsx-key */
-'use client';
