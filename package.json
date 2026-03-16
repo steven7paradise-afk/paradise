@@ -1,0 +1,12 @@
+{
+  "name": "shiftflow",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "format": "prettier --write ."
+  },
+  "packageManager": "pnpm@10.32.1"
+}

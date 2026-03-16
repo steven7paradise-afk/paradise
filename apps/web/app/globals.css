@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f9fc;
+  --foreground: #0f172a;
+  --muted: #94a3b8;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --ring: #4178ff;
+}
+
+.dark {
+  --background: #0b1220;
+  --foreground: #e2e8f0;
+  --muted: #94a3b8;
+  --card: #111827;
+  --card-foreground: #e2e8f0;
+  --border: #1f2937;
+  --ring: #6f9eff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: color-mix(in srgb, var(--card) 90%, transparent);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+}

@@ -1,0 +1,24 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# build output
+.next
+.turbo
+dist
+build
+out
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# editor
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# artifacts
+supabase.exe
+supabase_windows_amd64.tar.gz
