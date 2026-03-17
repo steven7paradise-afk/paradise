@@ -1,0 +1,22 @@
+export const localeKeys = {
+  navDashboard: 'navDashboard',
+  navEmployees: 'navEmployees',
+  navSchedule: 'navSchedule',
+  navLeaves: 'navLeaves',
+  navReports: 'navReports',
+  navSettings: 'navSettings',
+  quickNewShift: 'quickNewShift',
+  quickInvite: 'quickInvite',
+  quickLeave: 'quickLeave',
+  searchPlaceholder: 'searchPlaceholder',
+  titleEmployees: 'titleEmployees',
+  subtitleEmployees: 'subtitleEmployees',
+  titleSchedule: 'titleSchedule',
+  subtitleSchedule: 'subtitleSchedule',
+  titleLeaves: 'titleLeaves',
+  subtitleLeaves: 'subtitleLeaves',
+  titleReports: 'titleReports',
+  subtitleReports: 'subtitleReports',
+  titleSettings: 'titleSettings',
+  subtitleSettings: 'subtitleSettings'
+} as const;

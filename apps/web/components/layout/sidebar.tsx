@@ -16,6 +16,7 @@ import { navItems } from '@/lib/nav';
 import { cn } from '@/lib/utils';
 import { useUIStore } from '@/store/ui';
 import { Button } from '@/components/ui/button';
+import { useLocale } from '@/hooks/use-locale';
 
 const iconMap: Record<string, React.ReactNode> = {
   layout: <LayoutGrid className="h-4 w-4" />,
@@ -29,6 +30,7 @@ const iconMap: Record<string, React.ReactNode> = {
 export const Sidebar = () => {
   const pathname = usePathname();
   const { sidebarOpen, toggleSidebar } = useUIStore();
+  const { t } = useLocale();
 
   return (
     <aside
@@ -68,7 +70,7 @@ export const Sidebar = () => {
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-100">
                 {iconMap[item.icon]}
               </span>
-              {sidebarOpen && <span>{item.label}</span>}
+              {sidebarOpen && <span>{t(item.label)}</span>}
             </Link>
           );
         })}

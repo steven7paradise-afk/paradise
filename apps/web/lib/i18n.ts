@@ -1,0 +1,72 @@
+export type Locale = 'en' | 'es' | 'it';
+
+export const messages: Record<Locale, Record<string, string>> = {
+  en: {
+    navDashboard: 'Dashboard',
+    navEmployees: 'Employees',
+    navSchedule: 'Schedule',
+    navLeaves: 'Leaves',
+    navReports: 'Reports',
+    navSettings: 'Settings',
+    quickNewShift: 'New shift',
+    quickInvite: 'Invite employee',
+    quickLeave: 'Request leave',
+    searchPlaceholder: 'Search employees, shifts...',
+    titleEmployees: 'Team',
+    subtitleEmployees: 'Manage employees, roles, and availability.',
+    titleSchedule: 'Schedule',
+    subtitleSchedule: 'Drag & drop shifts, publish, manage open shifts.',
+    titleLeaves: 'Leave management',
+    subtitleLeaves: 'Approve requests and track absences.',
+    titleReports: 'Reports',
+    subtitleReports: 'Export hours, schedules, and attendance.',
+    titleSettings: 'Settings',
+    subtitleSettings: 'Company profile, notifications, themes.'
+  },
+  es: {
+    navDashboard: 'Panel',
+    navEmployees: 'Empleados',
+    navSchedule: 'Horario',
+    navLeaves: 'Permisos',
+    navReports: 'Reportes',
+    navSettings: 'Ajustes',
+    quickNewShift: 'Nuevo turno',
+    quickInvite: 'Invitar empleado',
+    quickLeave: 'Solicitar permiso',
+    searchPlaceholder: 'Busca empleados o turnos...',
+    titleEmployees: 'Equipo',
+    subtitleEmployees: 'Gestiona empleados, roles y disponibilidad.',
+    titleSchedule: 'Horario',
+    subtitleSchedule: 'Arrastra y suelta turnos, publica, gestiona abiertos.',
+    titleLeaves: 'Gestión de permisos',
+    subtitleLeaves: 'Aprueba solicitudes y controla ausencias.',
+    titleReports: 'Reportes',
+    subtitleReports: 'Exporta horas, horarios y asistencia.',
+    titleSettings: 'Ajustes',
+    subtitleSettings: 'Perfil de empresa, notificaciones, temas.'
+  },
+  it: {
+    navDashboard: 'Dashboard',
+    navEmployees: 'Dipendenti',
+    navSchedule: 'Calendario',
+    navLeaves: 'Permessi',
+    navReports: 'Report',
+    navSettings: 'Impostazioni',
+    quickNewShift: 'Nuovo turno',
+    quickInvite: 'Invita dipendente',
+    quickLeave: 'Richiedi permesso',
+    searchPlaceholder: 'Cerca dipendenti o turni...',
+    titleEmployees: 'Team',
+    subtitleEmployees: 'Gestisci dipendenti, ruoli e disponibilità.',
+    titleSchedule: 'Pianificazione',
+    subtitleSchedule: 'Drag & drop turni, pubblica, gestisci aperti.',
+    titleLeaves: 'Gestione permessi',
+    subtitleLeaves: 'Approva richieste e monitora assenze.',
+    titleReports: 'Report',
+    subtitleReports: 'Esporta ore, calendari e presenze.',
+    titleSettings: 'Impostazioni',
+    subtitleSettings: 'Profilo azienda, notifiche, temi.'
+  }
+};
+
+export const defaultLocale: Locale = 'en';

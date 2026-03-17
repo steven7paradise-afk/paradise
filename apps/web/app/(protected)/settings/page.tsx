@@ -1,13 +1,15 @@
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { useLocale } from '@/hooks/use-locale';
 
 export default function SettingsPage() {
+  const { t } = useLocale();
   return (
     <div className="space-y-4">
       <div>
-        <h1 className="text-xl font-semibold text-slate-900 dark:text-white">Settings</h1>
-        <p className="text-sm text-slate-500">Company profile, notifications, themes.</p>
+        <h1 className="text-xl font-semibold text-slate-900 dark:text-white">{t('titleSettings')}</h1>
+        <p className="text-sm text-slate-500">{t('subtitleSettings')}</p>
       </div>
       <Card className="space-y-4 p-4">
         <div className="space-y-2">
@@ -23,3 +25,4 @@ export default function SettingsPage() {
     </div>
   );
 }
+‘use client’;

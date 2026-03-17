@@ -1,14 +1,14 @@
 export const navItems = [
-  { href: '/dashboard', label: 'Dashboard', icon: 'layout' },
-  { href: '/employees', label: 'Employees', icon: 'users' },
-  { href: '/schedule', label: 'Schedule', icon: 'calendar' },
-  { href: '/leaves', label: 'Leaves', icon: 'umbrella' },
-  { href: '/reports', label: 'Reports', icon: 'bar-chart-2' },
-  { href: '/settings', label: 'Settings', icon: 'settings' }
+  { href: '/dashboard', label: 'navDashboard', icon: 'layout' },
+  { href: '/employees', label: 'navEmployees', icon: 'users' },
+  { href: '/schedule', label: 'navSchedule', icon: 'calendar' },
+  { href: '/leaves', label: 'navLeaves', icon: 'umbrella' },
+  { href: '/reports', label: 'navReports', icon: 'bar-chart-2' },
+  { href: '/settings', label: 'navSettings', icon: 'settings' }
 ];
 
 export const quickActions = [
-  { label: 'New shift', href: '/schedule?new=shift' },
-  { label: 'Invite employee', href: '/employees?modal=invite' },
-  { label: 'Request leave', href: '/leaves?modal=request' }
+  { label: 'quickNewShift', href: '/schedule?new=shift' },
+  { label: 'quickInvite', href: '/employees?modal=invite' },
+  { label: 'quickLeave', href: '/leaves?modal=request' }
 ];
